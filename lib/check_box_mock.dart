@@ -58,11 +58,17 @@ class _CheckBoxMockState extends State<CheckBoxMock> {
               actions: [
                 ElevatedButton(
                   child: Text("Cancel"),
-                  onPressed: () {},
+                  onPressed: () {
+                    itensSelecionados.clear();
+                    Navigator.pop(context);
+                  },
                 ),
                 ElevatedButton(
                   child: Text("Continue"),
-                  onPressed: () {},
+                  onPressed: () {
+                    itensSelecionados.clear();
+                    Navigator.pop(context);
+                  },
                 ),
               ],
             );
